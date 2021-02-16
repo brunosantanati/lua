@@ -7,6 +7,7 @@ https://www.tutorialspoint.com/lua/lua_functions.htm
 https://stackoverflow.com/questions/13942732/incrementation-in-lua
 https://www.lua.org/pil/5.html --functions
 https://www.tutorialspoint.com/lua/lua_for_loop.htm
+https://stackoverflow.com/questions/7616260/for-loop-on-lua
 https://www.tutorialspoint.com/lua/lua_variables.htm
 https://www.tutorialspoint.com/lua/lua_file_io.htm
 http://lua-users.org/wiki/StringLibraryTutorial
