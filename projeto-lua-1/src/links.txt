@@ -1,0 +1,10 @@
+https://www.tutorialspoint.com/lua/lua_arrays.htm
+http://www.wellho.net/resources/ex.php4?item=u110/flapper
+http://lua-users.org/wiki/SplitJoin
+https://stackoverflow.com/questions/20543450/how-to-convert-a-lua-string-to-float
+http://www.lua.org/manual/5.1/manual.html#pdf-tonumber
+https://www.tutorialspoint.com/lua/lua_functions.htm
+https://stackoverflow.com/questions/13942732/incrementation-in-lua
+https://www.lua.org/pil/5.html
+https://www.tutorialspoint.com/lua/lua_for_loop.htm
+https://www.tutorialspoint.com/lua/lua_variables.htm
