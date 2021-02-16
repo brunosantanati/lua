@@ -1,10 +1,18 @@
 https://www.tutorialspoint.com/lua/lua_arrays.htm
-http://www.wellho.net/resources/ex.php4?item=u110/flapper
+http://www.wellho.net/resources/ex.php4?item=u110/flapper --ler txt
 http://lua-users.org/wiki/SplitJoin
 https://stackoverflow.com/questions/20543450/how-to-convert-a-lua-string-to-float
 http://www.lua.org/manual/5.1/manual.html#pdf-tonumber
 https://www.tutorialspoint.com/lua/lua_functions.htm
 https://stackoverflow.com/questions/13942732/incrementation-in-lua
-https://www.lua.org/pil/5.html
+https://www.lua.org/pil/5.html --functions
 https://www.tutorialspoint.com/lua/lua_for_loop.htm
 https://www.tutorialspoint.com/lua/lua_variables.htm
+https://www.tutorialspoint.com/lua/lua_file_io.htm
+http://lua-users.org/wiki/StringLibraryTutorial
+https://www.tutorialspoint.com/lua/lua_tables.htm
+https://www.codegrepper.com/code-examples/lua/lua+split+string+in+array
+https://www.lua.org/pil/2.5.html --tables
+https://stackoverflow.com/questions/10158450/how-to-check-if-matching-text-is-found-in-a-string-in-lua
+https://www.lua.org/pil/3.4.html -- Concatenation
+http://lua-users.org/wiki/StringTrim
