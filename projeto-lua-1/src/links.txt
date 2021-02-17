@@ -20,3 +20,4 @@ http://lua-users.org/wiki/StringTrim
 https://www.lua.org/pil/4.3.1.html --elseif
 https://www.tutorialspoint.com/lua/if_statement_in_lua.htm
 https://www.lua.org/pil/19.1.html -- Array Size
+https://www.lua.org/pil/20.html -- format digits
