@@ -97,6 +97,8 @@ function createResult(resultFilePath, array1, array2)
   -- debug only
   for i, number in ipairs(arrayWithAverage) do
     print(number)
+    -- formatado:
+    --print(string.format("%.3f", number))
   end
 
   createResultFile(resultFilePath, arrayWithAverage)
@@ -121,9 +123,9 @@ function createResultFile(resultFilePath, arrayWithAverage)
         previousNumber = currentNumber        
       else
         if(counter > 1) then
-          io.write(counter .. "*" .. previousNumber .. " ")
+          io.write(counter .. "*" .. string.format("%.3f", previousNumber) .. " ")
         else
-          io.write(previousNumber .. " ")
+          io.write(string.format("%.3f", previousNumber) .. " ")
         end
         previousNumber = currentNumber
         counter = 1
@@ -131,9 +133,9 @@ function createResultFile(resultFilePath, arrayWithAverage)
       
       if(lastNumberIndex == i) then
         if(counter > 1) then
-          io.write(counter .. "*" .. currentNumber .. " ")
+          io.write(counter .. "*" .. string.format("%.3f", currentNumber) .. " ")
         else
-          io.write(currentNumber .. " ")
+          io.write(string.format("%.3f", currentNumber) .. " ")
         end
       end
       
