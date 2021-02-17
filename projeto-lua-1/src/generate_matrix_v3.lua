@@ -1,8 +1,7 @@
 function start()
   array1 = createArrayFromTxt("C:\\Users\\55119\\lua-workspace\\lua\\projeto-lua-1\\src\\Arquivo-1.inc")
   array2 = createArrayFromTxt("C:\\Users\\55119\\lua-workspace\\lua\\projeto-lua-1\\src\\Arquivo-2.inc")
-  result = createResult(array1, array2)  
-  readResult(result)
+  createResult("C:\\Users\\55119\\lua-workspace\\lua\\projeto-lua-1\\src\\Arquivo-resultado.inc", array1, array2)  
 end
 
 function createArrayFromTxt(filePath)
@@ -88,20 +87,60 @@ function split(text, delimiter)
     return result;
 end
 
-function createResult(array1, array2)
-  result = {}
+function createResult(resultFilePath, array1, array2)
+  arrayWithAverage = {}
 
   for i, number in ipairs(array1) do
-    result[i] = (array1[i] + array2[i]) / 2 
+    arrayWithAverage[i] = (array1[i] + array2[i]) / 2 
   end
-
-  return result
-end
-
-function readResult(result)
-  for i, number in ipairs(result) do
+  
+  -- debug only
+  for i, number in ipairs(arrayWithAverage) do
     print(number)
   end
+
+  createResultFile(resultFilePath, arrayWithAverage)
+end
+
+function createResultFile(resultFilePath, arrayWithAverage)
+
+  previousNumber = 0
+  counter = 1
+  lastNumberIndex = table.getn(arrayWithAverage)
+
+  resultFile = io.open(resultFilePath, "w")
+  io.output(resultFile)
+  
+  for i, currentNumber in ipairs(arrayWithAverage) do
+    if(i == 1) then
+      previousNumber = currentNumber
+    else
+    
+      if(currentNumber == previousNumber) then
+        counter = counter + 1
+        previousNumber = currentNumber        
+      else
+        if(counter > 1) then
+          io.write(counter .. "*" .. previousNumber .. " ")
+        else
+          io.write(previousNumber .. " ")
+        end
+        previousNumber = currentNumber
+        counter = 1
+      end
+      
+      if(lastNumberIndex == i) then
+        if(counter > 1) then
+          io.write(counter .. "*" .. currentNumber .. " ")
+        else
+          io.write(currentNumber .. " ")
+        end
+      end
+      
+    end -- end of else
+  end -- end of for
+  
+  io.close(resultFile)
 end
 
 start()

@@ -17,3 +17,6 @@ https://www.lua.org/pil/2.5.html --tables
 https://stackoverflow.com/questions/10158450/how-to-check-if-matching-text-is-found-in-a-string-in-lua
 https://www.lua.org/pil/3.4.html -- Concatenation
 http://lua-users.org/wiki/StringTrim
+https://www.lua.org/pil/4.3.1.html --elseif
+https://www.tutorialspoint.com/lua/if_statement_in_lua.htm
+https://www.lua.org/pil/19.1.html -- Array Size
