@@ -32,6 +32,9 @@ function createArrayFromTxt(filePath)
   
   io.close(file)
   
+  print("Numero de itens: ")
+  print(#array)
+  
   return array
 end
 
